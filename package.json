@@ -5,12 +5,15 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate && cp -r -p .output/public/* docs",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.7.3"
-  }
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "nuxt": "^3.7.3",
+    "nuxt-icon": "^0.5.0"
+  },
+  "dependencies": {}
 }
